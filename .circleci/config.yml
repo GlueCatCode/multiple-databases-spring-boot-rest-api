@@ -1,8 +1,8 @@
 version: 2
-    jobs:
-        build:
-            docker:
-                — image: circleci/openjdk:10.0.2-13-jdk-sid
-            steps:
-                — checkout
-                — run: ./mvnw clean install
+jobs:
+    build:
+        docker:
+            — image: circleci/openjdk:10.0.2-13-jdk-sid
+        steps:
+            — checkout
+            — run: ./mvnw clean install
