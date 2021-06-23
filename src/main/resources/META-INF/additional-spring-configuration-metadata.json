@@ -1,0 +1,42 @@
+{"properties": [
+  {
+    "name": "gcc.databases",
+    "type": "java.lang.String",
+    "description": "Bancos de dados separados por virgula"
+  },
+  {
+    "name": "gcc.hostdb",
+    "type": "java.lang.String",
+    "description": "A description for 'gcc.hostdb'"
+  },
+  {
+    "name": "gcc.passdb",
+    "type": "java.lang.String",
+    "description": "A description for 'gcc.passdb'"
+  },
+  {
+    "name": "gcc.userdb",
+    "type": "java.lang.String",
+    "description": "A description for 'gcc.userdb'"
+  },
+  {
+    "name": "gcc.pool.initial-size",
+    "type": "java.lang.Integer",
+    "description": "Set the number of connections that will be established when the connection pool is started"
+  },
+  {
+    "name": "gcc.pool.max-idle",
+    "type": "java.lang.Integer",
+    "description": "The maximum number of active connections that can be allocated from this pool at the same time"
+  },
+  {
+    "name": "gcc.pool.max-active",
+    "type": "java.lang.String",
+    "description": "The maximum number of connections that should be kept in the idle pool if isPoolSweeperEnabled() returns false"
+  },
+  {
+    "name": "gcc.entities",
+    "type": "java.lang.String",
+    "description": "Pacotes de entidades para se escaneado"
+  }
+]}

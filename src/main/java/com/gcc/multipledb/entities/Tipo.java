@@ -1,0 +1,25 @@
+package com.gcc.multipledb.entities;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity
+@Data
+@Table
+public class Tipo {
+
+	@Id
+	@Column
+	private Integer id;
+
+	@Column
+	private String codigo;
+	
+	@Column
+	private String descricao;
+
+}
