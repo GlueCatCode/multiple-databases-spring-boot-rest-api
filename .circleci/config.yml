@@ -5,4 +5,4 @@ jobs:
             — image: circleci/openjdk:10.0.2-13-jdk-sid
         steps:
             — checkout
-            — run: ./mvnw clean install
+            — run: mvn clean install
