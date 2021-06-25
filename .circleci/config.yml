@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/openjdk:10.0.2-13-jdk
+      - image: circleci/openjdk:16-ea-13-jdk-buster-node-browsers-legacy
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
