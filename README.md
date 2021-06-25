@@ -1,6 +1,4 @@
-[![GlueCatCode](https://circleci.com/gh/GlueCatCode/multiple-databases-spring-boot-rest-api.svg?style=shield)](https://github.com/GlueCatCode/multiple-databases-spring-boot-rest-api)
-
-# Multiple Databases with Spring Boot Rest API
+# Multiple Databases with Spring Boot Rest API [![GlueCatCode](https://circleci.com/gh/GlueCatCode/multiple-databases-spring-boot-rest-api.svg?style=shield)](https://github.com/GlueCatCode/multiple-databases-spring-boot-rest-api)
 Gerencie multiplos bancos de dados através do Spring Boot. Segue vídeo demonstrativo utilizando o banco Postgres:<br>
 https://www.youtube.com/watch?v=SbbVKxIrb88
 
