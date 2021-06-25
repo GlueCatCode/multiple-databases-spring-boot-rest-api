@@ -40,4 +40,4 @@ jobs:
       - run: java --version
       # run tests!
       # mvn integration-test
-      - run: mvn clean package
+      - run: mvn clean
