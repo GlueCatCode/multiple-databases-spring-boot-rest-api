@@ -4,11 +4,21 @@
 Gerencie multiplos bancos de dados através do Spring Boot. Segue vídeo demonstrativo utilizando o banco Postgres:<br>
 https://www.youtube.com/watch?v=SbbVKxIrb88
 
+### Configurações
+![Screenshot 2021-06-25 164355](https://user-images.githubusercontent.com/26276218/123477581-a1d7f580-d5d4-11eb-82f4-e4aec09a9e5e.png)<br>
+**gcc.databases** - Bancos de dados separados por vírgula<br>
+**gcc.hostdb** - Host dos bancos de dados<br>
+**gcc.userdb** - User dos bancos de dados<br>
+**gcc.passdb** - Password dos bancos de dados<br> 
+**gcc.entities** - Pacotes de entidades para ser escaneado pelo entity manager separados por vírgula<br>
+**gcc.hash.\*** - Hash de acesso através da requisição para cada do banco de dados 
+
 ### Observações
 - O parêmetro header para as requisições é hash-multipledb;  
 ![Screenshot 2021-06-25 163652](https://user-images.githubusercontent.com/26276218/123476907-b2d43700-d5d3-11eb-9f5e-410fed3ea0cc.png)
 - Para testar crie os bancos de dados antes de rodar a aplicação;
 
 ### Melhorias / Bugs
-- Uma classe PrincipalView foi criada como um DTO para facilitar o controller e demais testes;
-- Classe MultipleDbApplicationTests implementada para realização de testes em (http://localhost:8000/principal) validando o retorno do wrapper PrincipalView;
+- [x] Criar DTO, PrincipalView, para facilitar o controller e demais testes;
+- [x] Implementar testes em MultipleDbApplicationTests, para validar o retorno do wrapper PrincipalView;
+- [ ] Melhorar integração contínua pelo CircleCi, informar imagem de banco de dados para realizar os testes;
