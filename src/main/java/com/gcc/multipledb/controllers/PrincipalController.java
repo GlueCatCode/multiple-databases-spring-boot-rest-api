@@ -1,8 +1,6 @@
 package com.gcc.multipledb.controllers;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +14,7 @@ import com.gcc.multipledb.entities.Usuario;
 import com.gcc.multipledb.repositories.FilialRepository;
 import com.gcc.multipledb.repositories.FormaPagamentoRepository;
 import com.gcc.multipledb.repositories.UsuarioRepository;
+import com.gcc.multipledb.views.PrincipalView;
 
 @RestController
 @RequestMapping("/principal")
@@ -33,11 +32,8 @@ public class PrincipalController {
 		List<Usuario> usuarios = usuarioRepository.findAll();
 		List<Filial> filiais = filialRepository.findAll();
 		List<FormaPagamento> formasDePagamento = formaPagamentoRepository.findAll();
-		Map<String, Object> rtn = new HashMap<String, Object>();
-		rtn.put("usuarios", usuarios);
-		rtn.put("filiais", filiais);
-		rtn.put("formasDePagamento", formasDePagamento);
-		return ResponseEntity.ok().body(rtn);
+		PrincipalView view = new PrincipalView(usuarios, filiais, formasDePagamento);
+		return ResponseEntity.ok().body(view);
 	}
 	
 }
