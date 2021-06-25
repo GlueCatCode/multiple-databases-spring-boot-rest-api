@@ -12,9 +12,9 @@ https://www.youtube.com/watch?v=SbbVKxIrb88
 **gcc.passdb** - Password dos bancos de dados<br> 
 **gcc.entities** - Pacotes de entidades para ser escaneado pelo entity manager separados por vírgula<br>
 **gcc.hash.\*** - Hash de acesso através da requisição para cada do banco de dados<br>
-**gcc.pool.initial-size** - Define o número de conexões que irão ser estabilizadas quando o pool de conexão for iniciado<br>
+**gcc.pool.initial-size** - Número de conexões serão estabilizadas quando o pool de conexão for iniciado<br>
 **gcc.pool.max-active** - Número máximo de conexões ativas que podem ser alocadas no pool ao mesmo tempo<br>
-**gcc.pool.max-idle** - Número máximo de conexões que deve ser mantido no pool ocioso 
+**gcc.pool.max-idle** - Número máximo de conexões que devem ser mantidas no pool ocioso 
 
 ### Observações
 - O parêmetro header para as requisições é hash-multipledb;  
