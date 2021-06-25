@@ -17,6 +17,7 @@ https://www.youtube.com/watch?v=SbbVKxIrb88
 ### Observações
 - O parêmetro header para as requisições é hash-multipledb;  
 ![Screenshot 2021-06-25 163652](https://user-images.githubusercontent.com/26276218/123476907-b2d43700-d5d3-11eb-9f5e-410fed3ea0cc.png)
+- Note que este hash irá trafegar pela intenet, então evite caracteres especiais;
 - Para testar crie os bancos de dados antes de rodar a aplicação;
 
 ### Melhorias / Bugs
